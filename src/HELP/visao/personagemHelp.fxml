@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HELP.controle.PersonagemHelpController">
+   <children>
+      <ImageView fx:id="helpShow" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/helpScreen/atributos.png" />
+         </image>
+      </ImageView>
+      <MenuButton fx:id="box" layoutX="202.0" layoutY="16.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="191.0" text="Atributos">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#showAtributos" text="Atributos" />
+          <MenuItem mnemonicParsing="false" onAction="#showGuerreiro" text="Guerreiro" />
+            <MenuItem mnemonicParsing="false" onAction="#showBarbaro" text="Bárbaro" />
+            <MenuItem mnemonicParsing="false" onAction="#showLadrao" text="Ladrão" />
+            <MenuItem mnemonicParsing="false" onAction="#showMago" text="Mago" />
+            <MenuItem mnemonicParsing="false" onAction="#showForasteiro" text="Forasteiro" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

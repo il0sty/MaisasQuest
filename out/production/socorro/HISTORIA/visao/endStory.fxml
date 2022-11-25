@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HISTORIA.controle.EndHistoriaController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="600.0" prefWidth="628.0">
+        <content>
+          <AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="628.0" scaleShape="false">
+               <children>
+                  <ImageView fx:id="showStory" fitHeight="900.0" fitWidth="628.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

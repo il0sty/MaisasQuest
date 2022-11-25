@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PRACA.controle.PracaMenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/bgPraca.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="menuButton" layoutX="16.0" layoutY="7.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="45.0" prefWidth="40.0" style="-fx-opacity: 0;" text="Menu" />
+      <Button fx:id="coliseuButton" layoutX="240.0" layoutY="62.0" mnemonicParsing="false" onAction="#goToColiseu" prefHeight="165.0" prefWidth="132.0" style="-fx-opacity: 0;" text="Ir Para o Coliseu" />
+      <Button fx:id="tavernaButton" layoutX="118.0" layoutY="229.0" mnemonicParsing="false" onAction="#goToTaverna" prefHeight="134.0" prefWidth="96.0" style="-fx-opacity: 0;" text="Taverna" />
+      <Button fx:id="ferreiroButton" layoutX="255.0" layoutY="232.0" mnemonicParsing="false" onAction="#goToFerreiro" prefHeight="128.0" prefWidth="102.0" style="-fx-opacity: 0;" text="Ferreiro" />
+      <Button fx:id="lojistaButton" layoutX="400.0" layoutY="232.0" mnemonicParsing="false" onAction="#goToLojista" prefHeight="128.0" prefWidth="96.0" style="-fx-opacity: 0;" text="Lojista" />
+      <Button fx:id="ficha" layoutX="11.0" layoutY="358.0" mnemonicParsing="false" onAction="#showFicha" prefHeight="33.0" prefWidth="82.0" style="-fx-opacity: 0;" text="Ficha" />
+      <Button fx:id="saveButton" layoutX="504.0" layoutY="355.0" mnemonicParsing="false" onAction="#goToSave" prefHeight="39.0" prefWidth="88.0" style="-fx-opacity: 0;" text="Salvar" />
+      <Button fx:id="helpButton" layoutX="548.0" layoutY="7.0" mnemonicParsing="false" onAction="#showHelp" prefHeight="45.0" prefWidth="47.0" style="-fx-opacity: 0;" text="Menu" />
+   </children>
+</AnchorPane>

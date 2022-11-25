@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PERSONAGEM.controle.CriacaoPersonagemController">
+   <children>
+      <ImageView fitHeight="404.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/bgCreate.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="menuButton" layoutX="5.0" layoutY="6.0" mnemonicParsing="false" onAction="#returnMenuButton" prefHeight="42.0" prefWidth="52.0" style="-fx-opacity: 0;" text="MENU">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nameField" layoutX="132.0" layoutY="74.0" />
+      <MenuButton fx:id="classBox" ellipsisString="0" layoutX="135.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" textAlignment="CENTER" textOverrun="CLIP">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#selectGuerreiro" text="Guerreiro" />
+          <MenuItem mnemonicParsing="false" onAction="#selectBarbaro" text="Bárbaro" />
+            <MenuItem mnemonicParsing="false" onAction="#selectLadrao" text="Ladrão" />
+            <MenuItem mnemonicParsing="false" onAction="#selectMago" text="Mago" />
+            <MenuItem mnemonicParsing="false" onAction="#selectForasteiro" text="Forasteiro" />
+        </items>
+      </MenuButton>
+      <Label fx:id="errorLabel" layoutX="30.0" layoutY="342.0" prefHeight="35.0" prefWidth="273.0" textFill="WHITE" />
+      <MenuButton fx:id="forBox" ellipsisString="0" layoutX="56.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" textAlignment="CENTER" textOverrun="CLIP">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#for0" text="0" />
+            <MenuItem mnemonicParsing="false" onAction="#for1" text="1" />
+            <MenuItem mnemonicParsing="false" onAction="#for2" text="2" />
+            <MenuItem mnemonicParsing="false" onAction="#for3" text="3" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="sorBox" ellipsisString="0" layoutX="501.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" textAlignment="CENTER" textOverrun="CLIP">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#sor0" text="0" />
+            <MenuItem mnemonicParsing="false" onAction="#sor1" text="1" />
+            <MenuItem mnemonicParsing="false" onAction="#sor2" text="2" />
+            <MenuItem mnemonicParsing="false" onAction="#sor3" text="3" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="espBox" ellipsisString="0" layoutX="425.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" textAlignment="CENTER" textOverrun="CLIP">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#esp0" text="0" />
+            <MenuItem mnemonicParsing="false" onAction="#esp1" text="1" />
+            <MenuItem mnemonicParsing="false" onAction="#esp2" text="2" />
+            <MenuItem mnemonicParsing="false" onAction="#esp3" text="3" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="agiBox" ellipsisString="0" layoutX="329.0" layoutY="263.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" textAlignment="CENTER" textOverrun="CLIP">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#agi0" text="0" />
+            <MenuItem mnemonicParsing="false" onAction="#agi1" text="1" />
+            <MenuItem mnemonicParsing="false" onAction="#agi2" text="2" />
+            <MenuItem mnemonicParsing="false" onAction="#agi3" text="3" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="conBox" ellipsisString="0" layoutX="228.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" textAlignment="CENTER" textOverrun="CLIP">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#con0" text="0" />
+            <MenuItem mnemonicParsing="false" onAction="#con1" text="1" />
+            <MenuItem mnemonicParsing="false" onAction="#con2" text="2" />
+            <MenuItem mnemonicParsing="false" onAction="#con3" text="3" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="refBox" ellipsisString="0" layoutX="135.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" textAlignment="CENTER" textOverrun="CLIP">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#ref0" text="0" />
+            <MenuItem mnemonicParsing="false" onAction="#ref1" text="1" />
+            <MenuItem mnemonicParsing="false" onAction="#ref2" text="2" />
+            <MenuItem mnemonicParsing="false" onAction="#ref3" text="3" />
+         </items>
+      </MenuButton>
+      <Button fx:id="startButton" layoutX="411.0" layoutY="336.0" mnemonicParsing="false" onAction="#validCharacter" prefHeight="58.0" prefWidth="124.0" style="-fx-opacity: 0;" text="INICIAR JOGO" />
+      <Button fx:id="helpButton" layoutX="542.0" layoutY="338.0" mnemonicParsing="false" onAction="#openHelpWindow" prefHeight="50.0" prefWidth="52.0" style="-fx-opacity: 0;" text="AJUDA" />
+   </children>
+</Pane>

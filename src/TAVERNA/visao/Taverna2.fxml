@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TAVERNA.controle.TavernaViewController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/Fundo_taverna.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="duncanTalk" layoutX="52.0" layoutY="37.0" prefHeight="47.0" prefWidth="444.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lifeShow" layoutX="119.0" layoutY="84.0" prefHeight="47.0" prefWidth="106.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="potShow" layoutX="305.0" layoutY="105.0" prefHeight="47.0" prefWidth="106.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="potPriceShow" layoutX="224.0" layoutY="300.0" prefHeight="47.0" prefWidth="106.0" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="18.0" layoutY="347.0" prefHeight="47.0" prefWidth="369.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="moneyShow" layoutX="135.0" layoutY="132.0" prefHeight="47.0" prefWidth="106.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="restButton" layoutX="59.0" layoutY="192.0" mnemonicParsing="false" onAction="#restAction" prefHeight="54.0" prefWidth="281.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="buyPotionButton" layoutX="59.0" layoutY="251.0" mnemonicParsing="false" onAction="#buyPotAction" prefHeight="54.0" prefWidth="281.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="helpButton" layoutX="550.0" layoutY="7.0" mnemonicParsing="false" onAction="#helpAction" prefHeight="40.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="returnButton" layoutX="7.0" layoutY="9.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="40.0" prefWidth="48.0" style="-fx-opacity: 0;" text="Button" />
+   </children>
+</Pane>

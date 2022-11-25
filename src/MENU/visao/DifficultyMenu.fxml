@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MENU.controle.DifficultyMenuController">
+   <children>
+      <ImageView fitHeight="427.0" fitWidth="604.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/difBG.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="menuButton" layoutX="3.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="54.0" prefWidth="56.0" style="-fx-opacity: 0;" text="MENU" />
+      <Text fx:id="difficultyShow" fill="WHITE" layoutX="338.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="197.0" AnchorPane.leftAnchor="338.0" AnchorPane.rightAnchor="69.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonEasy" layoutX="54.0" layoutY="210.0" mnemonicParsing="false" onAction="#setEasy" prefHeight="66.0" prefWidth="155.0" style="-fx-opacity: 0;" text="EASY" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="395.0">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonNormal" layoutX="223.0" layoutY="210.0" mnemonicParsing="false" onAction="#setNormal" prefHeight="66.0" prefWidth="155.0" style="-fx-opacity: 0;" text="NORMAL">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonHard" layoutX="392.0" layoutY="210.0" mnemonicParsing="false" onAction="#setHard" prefHeight="66.0" prefWidth="147.0" style="-fx-opacity: 0;" text="HARD" AnchorPane.leftAnchor="392.0" AnchorPane.rightAnchor="65.0">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

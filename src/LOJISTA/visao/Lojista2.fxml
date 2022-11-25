@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LOJISTA.controle.LojistaViewController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/Fundo_Lojista.png" />
+         </image>
+      </ImageView>
+      <MenuButton fx:id="numberBox" layoutX="336.0" layoutY="156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" textAlignment="CENTER">
+         <items>
+            <MenuItem fx:id="n1" mnemonicParsing="false" onAction="#setNumber1" text="1" />
+            <MenuItem fx:id="n2" mnemonicParsing="false" onAction="#setNumber2" text="2" />
+            <MenuItem fx:id="n3" mnemonicParsing="false" onAction="#setNumber3" text="3" />
+            <MenuItem fx:id="n4" mnemonicParsing="false" onAction="#setNumber4" text="4" />
+            <MenuItem fx:id="n5" mnemonicParsing="false" onAction="#setNumber5" text="5" />
+            <MenuItem fx:id="n6" mnemonicParsing="false" onAction="#setNumber6" text="6" />
+         </items>
+      </MenuButton>
+      <Button fx:id="buyButton" layoutX="336.0" layoutY="191.0" mnemonicParsing="false" onAction="#buyItem" prefHeight="44.0" prefWidth="86.0" style="-fx-opacity: 0;" text="Button" />
+      <Label fx:id="errorLabel" layoutX="31.0" layoutY="329.0" prefHeight="63.0" prefWidth="402.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="hildaTalk" layoutX="14.0" layoutY="47.0" prefHeight="63.0" prefWidth="472.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnButton" layoutX="8.0" layoutY="3.0" mnemonicParsing="false" onAction="#returnPraca" prefHeight="44.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Button" />
+      <Button fx:id="helpButton" layoutX="544.0" layoutY="8.0" mnemonicParsing="false" onAction="#openHelp" prefHeight="44.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Button" />
+      <Label fx:id="listItens" layoutX="20.0" layoutY="134.0" prefHeight="174.0" prefWidth="305.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="moneyShow" layoutX="493.0" layoutY="329.0" prefHeight="44.0" prefWidth="86.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

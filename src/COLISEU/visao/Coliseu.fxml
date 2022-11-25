@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="COLISEU.controle.ColiseuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/bgColiseu.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="inimigoName" layoutX="154.0" layoutY="20.0" prefHeight="147.0" prefWidth="265.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="condition" layoutX="173.0" layoutY="157.0" prefHeight="57.0" prefWidth="265.0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="showLife" layoutX="139.0" layoutY="258.0" prefHeight="57.0" prefWidth="112.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="showEspecial" layoutX="361.0" layoutY="258.0" prefHeight="57.0" prefWidth="112.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="showPocoes" layoutX="633.0" layoutY="258.0" prefHeight="57.0" prefWidth="63.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="attackButton" fitHeight="57.0" fitWidth="137.0" layoutX="14.0" layoutY="315.0" onMouseClicked="#attackButomClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/botoes/atacarBotaoN.png" />
+         </image></ImageView>
+      <ImageView fx:id="defenderButton" fitHeight="57.0" fitWidth="137.0" layoutX="195.0" layoutY="315.0" onMouseClicked="#defenderButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/botoes/defender.png" />
+         </image></ImageView>
+      <ImageView fx:id="especialButton" fitHeight="57.0" fitWidth="137.0" layoutX="370.0" layoutY="315.0" onMouseClicked="#especialButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/botoes/usarEspecial.png" />
+         </image></ImageView>
+      <ImageView fx:id="potionButton" fitHeight="57.0" fitWidth="137.0" layoutX="549.0" layoutY="315.0" onMouseClicked="#potionButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/botoes/usarPocao.png" />
+         </image></ImageView>
+      <ImageView fx:id="sairButton" fitHeight="57.0" fitWidth="137.0" layoutX="282.0" layoutY="315.0" onMouseClicked="#sairButtonClicked" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../Imagens/botoes/Continuar.png" />
+         </image></ImageView>
+      <ImageView fx:id="fugirButton" fitHeight="29.0" fitWidth="71.0" layoutX="31.0" layoutY="14.0" onMouseClicked="#runButomClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/botoes/desistir.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="combatLog" fill="WHITE" layoutX="462.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="210.13671875">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="helpButton" fitHeight="37.0" fitWidth="47.0" layoutX="654.0" layoutY="214.0" onMouseClicked="#helpButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/botoes/help.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="infoButton" fitHeight="29.0" fitWidth="63.0" layoutX="120.0" layoutY="15.0" onMouseClicked="#infoButomClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/botoes/infosBotao.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

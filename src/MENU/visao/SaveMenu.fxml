@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MENU.controle.SaveMenuController">
+   <children>
+      <ImageView fitHeight="402.0" fitWidth="603.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagens/bgLoad.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="errorLabel" layoutX="187.0" layoutY="49.0" prefHeight="27.0" prefWidth="229.0" text="ERRO: Save Selecionado Vazio" textFill="WHITE" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="save1" layoutX="87.0" layoutY="79.0" mnemonicParsing="false" onAction="#loadSave1" prefHeight="54.0" prefWidth="438.0" />
+      <Button fx:id="save2" layoutX="87.0" layoutY="140.0" mnemonicParsing="false" onAction="#loadSave2" prefHeight="54.0" prefWidth="438.0" />
+      <Button fx:id="save3" layoutX="87.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadSave3" prefHeight="54.0" prefWidth="438.0" />
+      <Button fx:id="save4" layoutX="87.0" layoutY="261.0" mnemonicParsing="false" onAction="#loadSave4" prefHeight="54.0" prefWidth="438.0" />
+      <Button fx:id="save5" depthTest="DISABLE" layoutX="87.0" layoutY="323.0" mnemonicParsing="false" onAction="#loadSave5" prefHeight="54.0" prefWidth="438.0" style="-fx-border-radius: 5;" />
+      <Button fx:id="menuButton" layoutX="7.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="47.0" prefWidth="47.0" style="-fx-opacity: 0;" text="Menu" />
+   </children>
+</AnchorPane>
